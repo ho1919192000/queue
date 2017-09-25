@@ -1,7 +1,7 @@
 # Queue
 Queues can be implemented in JavaScript using arrays, by using the push or unshift functions to add items to one end of the array, and the shift or pop functions to remove them from the other. This method, while simple, is inefficient for large queues as the shift and unshift functions move every item in the array.
 ## Simple Queue
-```
+```javascript
 function Queue() {
     var items = [];
     this.enqueue = function (element) {
@@ -43,7 +43,7 @@ queue.print();
 ```
 ## The Priority Queue
 In computer science, a priority queue is an abstract data type which is like a regular queue or stack data structure, but where additionally each element has a "priority" associated with it. In a priority queue, an element with high priority is served before an element with low priority. If two elements have the same priority, they are served according to their order in the queue.
-```
+```javascript
 function PriorityQueue(){
     var items = [];
     function QueueElement (element, priority){
@@ -103,7 +103,7 @@ priorityQueue.print();
 ```
 ## The Circular Queue - Hot Potato
 We also have another modified version of the queue implementation, which is the circular queue. An example of a circular queue is the Hot Potato game. In this game, children are organized in a circle, and they pass the hot potato to their neighbor as fast as they can. At a certain point of the game, the hot potato stops being passed around the circle of children, and the child that has the hot potato is removed from the circle. This action is repeated until there is only one child left (the winner).
-```
+```javascript
 function hotPotato (nameList, num){
     var queue = new Queue();
     
